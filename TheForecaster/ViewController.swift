@@ -27,12 +27,23 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  func locationDidUpdate(notification: NSNotification) {
-    println("locationAvaliable")
-  }
-  
   @IBAction func refreshWeatherButtonPressed(sender: UIButton) {
   }
   
+  func locationDidUpdate(notification: NSNotification) {
+    println("locationAvaliable")
+    
+    let locationDictionary = notification.userInfo as! Dictionary<String,AnyObject>
+    let latitude = locationDictionary["latitude"] as! Double
+    let longitude = locationDictionary["longitude"] as! Double
+    let city = locationDictionary["city"] as! String
+    let state = locationDictionary["state"] as! String
+    let country = locationDictionary["country"] as! String
+    let lastUpdatedAt = locationDictionary["timestamp"] as! NSDate
+    println(locationDictionary)
+    
+    locationLabel.text = "\(city), \(state) (\(country))"
+  }
+
 }
 
