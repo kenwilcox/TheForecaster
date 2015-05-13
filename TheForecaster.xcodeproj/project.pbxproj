@@ -38,6 +38,8 @@
 		BEE164AB1B03033A00273E54 /* TheForecasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheForecasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE164B01B03033A00273E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE164B11B03033A00273E54 /* TheForecasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForecasterTests.swift; sourceTree = "<group>"; };
+		BEE164BB1B0303F800273E54 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BEE164BC1B0303F800273E54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 		BEE1648A1B03033A00273E54 = {
 			isa = PBXGroup;
 			children = (
+				BEE164BB1B0303F800273E54 /* LICENSE.md */,
+				BEE164BC1B0303F800273E54 /* README.md */,
 				BEE164951B03033A00273E54 /* TheForecaster */,
 				BEE164AE1B03033A00273E54 /* TheForecasterTests */,
 				BEE164941B03033A00273E54 /* Products */,
