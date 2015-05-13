@@ -14,6 +14,7 @@
 		BEE164A31B03033A00273E54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE164A21B03033A00273E54 /* Images.xcassets */; };
 		BEE164A61B03033A00273E54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE164A41B03033A00273E54 /* LaunchScreen.xib */; };
 		BEE164B21B03033A00273E54 /* TheForecasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE164B11B03033A00273E54 /* TheForecasterTests.swift */; };
+		BEE164C01B03079A00273E54 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE164BF1B03079A00273E54 /* LocationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BEE164B11B03033A00273E54 /* TheForecasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForecasterTests.swift; sourceTree = "<group>"; };
 		BEE164BB1B0303F800273E54 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		BEE164BC1B0303F800273E54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEE164BF1B03079A00273E54 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				BEE164981B03033A00273E54 /* AppDelegate.swift */,
 				BEE1649D1B03033A00273E54 /* ViewController.swift */,
+				BEE164BF1B03079A00273E54 /* LocationController.swift */,
 				BEE1649F1B03033A00273E54 /* Main.storyboard */,
 				BEE164A21B03033A00273E54 /* Images.xcassets */,
 				BEE164A41B03033A00273E54 /* LaunchScreen.xib */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE164C01B03079A00273E54 /* LocationController.swift in Sources */,
 				BEE1649E1B03033A00273E54 /* ViewController.swift in Sources */,
 				BEE164991B03033A00273E54 /* AppDelegate.swift in Sources */,
 				BEE1649C1B03033A00273E54 /* TheForecaster.xcdatamodeld in Sources */,

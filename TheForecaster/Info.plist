@@ -43,5 +43,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUsageDescription</key>
+	<string>TheForecaster would like to use your location to get weather information for your current location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>TheForecaster would like to use your location to get weather information for your current location in the background for faster updates.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>TheForecaster would like to use your location to get weather information for your current location.</string>
 </dict>
 </plist>
