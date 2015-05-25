@@ -45,12 +45,12 @@ extension LocationController: CLLocationManagerDelegate {
         let placemark = placemarks.last as! CLPlacemark
         
         let locationInfo = [
-          "latitude": placemark.location.coordinate.latitude,
-          "longitude": placemark.location.coordinate.longitude,
-          "city": placemark.locality,
-          "state": placemark.administrativeArea,
-          "country": placemark.country,
-          "timestamp": location.timestamp
+          GlobalConstants.LocationDictionary.latitude: placemark.location.coordinate.latitude,
+          GlobalConstants.LocationDictionary.longitude: placemark.location.coordinate.longitude,
+          GlobalConstants.LocationDictionary.city: placemark.locality,
+          GlobalConstants.LocationDictionary.state: placemark.administrativeArea,
+          GlobalConstants.LocationDictionary.country: placemark.country,
+          GlobalConstants.LocationDictionary.timestamp: location.timestamp
           ] as NSDictionary
         
         NSNotificationCenter.defaultCenter().postNotificationName(GlobalConstants.NotificationNames.locationDidUpdate, object: nil, userInfo: locationInfo as [NSObject : AnyObject])

@@ -35,12 +35,12 @@ class ViewController: UIViewController {
     println("locationAvaliable")
     
     let locationDictionary = notification.userInfo as! Dictionary<String,AnyObject>
-    let latitude = locationDictionary["latitude"] as! Double
-    let longitude = locationDictionary["longitude"] as! Double
-    let city = locationDictionary["city"] as! String
-    let state = locationDictionary["state"] as! String
-    let country = locationDictionary["country"] as! String
-    let lastUpdatedAt = locationDictionary["timestamp"] as! NSDate
+    let latitude = locationDictionary[GlobalConstants.LocationDictionary.latitude] as! Double
+    let longitude = locationDictionary[GlobalConstants.LocationDictionary.longitude] as! Double
+    let city = locationDictionary[GlobalConstants.LocationDictionary.city] as! String
+    let state = locationDictionary[GlobalConstants.LocationDictionary.state] as! String
+    let country = locationDictionary[GlobalConstants.LocationDictionary.country] as! String
+    let lastUpdatedAt = locationDictionary[GlobalConstants.LocationDictionary.timestamp] as! NSDate
     println(locationDictionary)
     
     locationLabel.text = "\(city), \(state) (\(country))"

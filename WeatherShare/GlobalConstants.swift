@@ -13,4 +13,13 @@ public struct GlobalConstants {
   public struct NotificationNames {
     public static let locationDidUpdate = "LOCATION_DID_UPDATE"
   }
+  
+  public struct LocationDictionary {
+    public static let latitude = "latitude"
+    public static let longitude = "longitude"
+    public static let city = "city"
+    public static let state = "state"
+    public static let country = "country"
+    public static let timestamp = "lastUpdatedAt"
+  }
 }
