@@ -8,11 +8,12 @@
 
 import UIKit
 import CoreLocation
+import WeatherShare
 
 class LocationController: NSObject {
   
   var locationManager:CLLocationManager!
-  class var locationDidUpdate: String { return "LOCATION_DID_UPDATE" }
+  //class var locationDidUpdate: String { return "LOCATION_DID_UPDATE" }
   
   override init() {
     
@@ -52,7 +53,7 @@ extension LocationController: CLLocationManagerDelegate {
           "timestamp": location.timestamp
           ] as NSDictionary
         
-        NSNotificationCenter.defaultCenter().postNotificationName(LocationController.locationDidUpdate, object: nil, userInfo: locationInfo as [NSObject : AnyObject])
+        NSNotificationCenter.defaultCenter().postNotificationName(GlobalConstants.NotificationNames.locationDidUpdate, object: nil, userInfo: locationInfo as [NSObject : AnyObject])
         
       }
     })

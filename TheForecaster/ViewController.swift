@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WeatherShare
 
 class ViewController: UIViewController {
   
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "locationDidUpdate:", name: LocationController.locationDidUpdate, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "locationDidUpdate:", name: GlobalConstants.NotificationNames.locationDidUpdate, object: nil)
   }
   
   override func didReceiveMemoryWarning() {

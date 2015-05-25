@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEDC76251B13C8F4000EFCC3 /* WeatherShare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEDC762B1B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; };
+		BEDC76341B13C8F4000EFCC3 /* WeatherShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */; };
+		BEDC76371B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; };
+		BEDC76381B13C8F4000EFCC3 /* WeatherShare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEDC76411B13C960000EFCC3 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */; };
 		BEE164991B03033A00273E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE164981B03033A00273E54 /* AppDelegate.swift */; };
 		BEE1649C1B03033A00273E54 /* TheForecaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEE1649A1B03033A00273E54 /* TheForecaster.xcdatamodeld */; };
 		BEE1649E1B03033A00273E54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1649D1B03033A00273E54 /* ViewController.swift */; };
@@ -18,6 +24,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BEDC762C1B13C8F4000EFCC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDC761F1B13C8F4000EFCC3;
+			remoteInfo = WeatherShare;
+		};
+		BEDC762E1B13C8F4000EFCC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE164921B03033A00273E54;
+			remoteInfo = TheForecaster;
+		};
+		BEDC76351B13C8F4000EFCC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDC761F1B13C8F4000EFCC3;
+			remoteInfo = WeatherShare;
+		};
 		BEE164AC1B03033A00273E54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
@@ -27,7 +54,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BEDC763E1B13C8F4000EFCC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEDC76381B13C8F4000EFCC3 /* WeatherShare.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDC76231B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherShare.h; sourceTree = "<group>"; };
+		BEDC762A1B13C8F4000EFCC3 /* WeatherShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDC76321B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherShareTests.swift; sourceTree = "<group>"; };
+		BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		BEE164931B03033A00273E54 /* TheForecaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheForecaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE164971B03033A00273E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE164981B03033A00273E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +93,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEDC761C1B13C8F4000EFCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC76271B13C8F4000EFCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC762B1B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE164901B03033A00273E54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDC76371B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +126,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEDC76211B13C8F4000EFCC3 /* WeatherShare */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */,
+				BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */,
+				BEDC76221B13C8F4000EFCC3 /* Supporting Files */,
+			);
+			path = WeatherShare;
+			sourceTree = "<group>";
+		};
+		BEDC76221B13C8F4000EFCC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76231B13C8F4000EFCC3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDC76301B13C8F4000EFCC3 /* WeatherShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */,
+				BEDC76311B13C8F4000EFCC3 /* Supporting Files */,
+			);
+			path = WeatherShareTests;
+			sourceTree = "<group>";
+		};
+		BEDC76311B13C8F4000EFCC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76321B13C8F4000EFCC3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BEE1648A1B03033A00273E54 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +168,8 @@
 				BEE164BC1B0303F800273E54 /* README.md */,
 				BEE164951B03033A00273E54 /* TheForecaster */,
 				BEE164AE1B03033A00273E54 /* TheForecasterTests */,
+				BEDC76211B13C8F4000EFCC3 /* WeatherShare */,
+				BEDC76301B13C8F4000EFCC3 /* WeatherShareTests */,
 				BEE164941B03033A00273E54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +179,8 @@
 			children = (
 				BEE164931B03033A00273E54 /* TheForecaster.app */,
 				BEE164AB1B03033A00273E54 /* TheForecasterTests.xctest */,
+				BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */,
+				BEDC762A1B13C8F4000EFCC3 /* WeatherShareTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +227,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BEDC761D1B13C8F4000EFCC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC76251B13C8F4000EFCC3 /* WeatherShare.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BEDC761F1B13C8F4000EFCC3 /* WeatherShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDC763D1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShare" */;
+			buildPhases = (
+				BEDC761B1B13C8F4000EFCC3 /* Sources */,
+				BEDC761C1B13C8F4000EFCC3 /* Frameworks */,
+				BEDC761D1B13C8F4000EFCC3 /* Headers */,
+				BEDC761E1B13C8F4000EFCC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherShare;
+			productName = WeatherShare;
+			productReference = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEDC76291B13C8F4000EFCC3 /* WeatherShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDC763F1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShareTests" */;
+			buildPhases = (
+				BEDC76261B13C8F4000EFCC3 /* Sources */,
+				BEDC76271B13C8F4000EFCC3 /* Frameworks */,
+				BEDC76281B13C8F4000EFCC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDC762D1B13C8F4000EFCC3 /* PBXTargetDependency */,
+				BEDC762F1B13C8F4000EFCC3 /* PBXTargetDependency */,
+			);
+			name = WeatherShareTests;
+			productName = WeatherShareTests;
+			productReference = BEDC762A1B13C8F4000EFCC3 /* WeatherShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BEE164921B03033A00273E54 /* TheForecaster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEE164B51B03033A00273E54 /* Build configuration list for PBXNativeTarget "TheForecaster" */;
@@ -132,10 +283,12 @@
 				BEE1648F1B03033A00273E54 /* Sources */,
 				BEE164901B03033A00273E54 /* Frameworks */,
 				BEE164911B03033A00273E54 /* Resources */,
+				BEDC763E1B13C8F4000EFCC3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BEDC76361B13C8F4000EFCC3 /* PBXTargetDependency */,
 			);
 			name = TheForecaster;
 			productName = TheForecaster;
@@ -169,6 +322,13 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Kenneth Wilcox";
 				TargetAttributes = {
+					BEDC761F1B13C8F4000EFCC3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BEDC76291B13C8F4000EFCC3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BEE164921B03033A00273E54;
+					};
 					BEE164921B03033A00273E54 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -193,11 +353,27 @@
 			targets = (
 				BEE164921B03033A00273E54 /* TheForecaster */,
 				BEE164AA1B03033A00273E54 /* TheForecasterTests */,
+				BEDC761F1B13C8F4000EFCC3 /* WeatherShare */,
+				BEDC76291B13C8F4000EFCC3 /* WeatherShareTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEDC761E1B13C8F4000EFCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC76281B13C8F4000EFCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE164911B03033A00273E54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +394,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BEDC761B1B13C8F4000EFCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC76411B13C960000EFCC3 /* GlobalConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC76261B13C8F4000EFCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC76341B13C8F4000EFCC3 /* WeatherShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE1648F1B03033A00273E54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +432,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BEDC762D1B13C8F4000EFCC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDC761F1B13C8F4000EFCC3 /* WeatherShare */;
+			targetProxy = BEDC762C1B13C8F4000EFCC3 /* PBXContainerItemProxy */;
+		};
+		BEDC762F1B13C8F4000EFCC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE164921B03033A00273E54 /* TheForecaster */;
+			targetProxy = BEDC762E1B13C8F4000EFCC3 /* PBXContainerItemProxy */;
+		};
+		BEDC76361B13C8F4000EFCC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDC761F1B13C8F4000EFCC3 /* WeatherShare */;
+			targetProxy = BEDC76351B13C8F4000EFCC3 /* PBXContainerItemProxy */;
+		};
 		BEE164AD1B03033A00273E54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEE164921B03033A00273E54 /* TheForecaster */;
@@ -267,6 +474,81 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BEDC76391B13C8F4000EFCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeatherShare/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEDC763A1B13C8F4000EFCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WeatherShare/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEDC763B1B13C8F4000EFCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeatherShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheForecaster.app/TheForecaster";
+			};
+			name = Debug;
+		};
+		BEDC763C1B13C8F4000EFCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeatherShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheForecaster.app/TheForecaster";
+			};
+			name = Release;
+		};
 		BEE164B31B03033A00273E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +689,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BEDC763D1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC76391B13C8F4000EFCC3 /* Debug */,
+				BEDC763A1B13C8F4000EFCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEDC763F1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC763B1B13C8F4000EFCC3 /* Debug */,
+				BEDC763C1B13C8F4000EFCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEE1648E1B03033A00273E54 /* Build configuration list for PBXProject "TheForecaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -423,6 +721,7 @@
 				BEE164B71B03033A00273E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE164B81B03033A00273E54 /* Build configuration list for PBXNativeTarget "TheForecasterTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +730,7 @@
 				BEE164BA1B03033A00273E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
