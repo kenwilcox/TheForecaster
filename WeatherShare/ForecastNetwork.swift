@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ForecastNetwork: NSObject {
+public class ForecastNetwork: NSObject {
    
 }

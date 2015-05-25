@@ -13,6 +13,8 @@
 		BEDC76371B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; };
 		BEDC76381B13C8F4000EFCC3 /* WeatherShare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEDC76411B13C960000EFCC3 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */; };
+		BEDC76431B13E7CC000EFCC3 /* ForecastNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76421B13E7CC000EFCC3 /* ForecastNetwork.swift */; };
+		BEDC76451B13E851000EFCC3 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76441B13E851000EFCC3 /* APIKeys.swift */; };
 		BEE164991B03033A00273E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE164981B03033A00273E54 /* AppDelegate.swift */; };
 		BEE1649C1B03033A00273E54 /* TheForecaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEE1649A1B03033A00273E54 /* TheForecaster.xcdatamodeld */; };
 		BEE1649E1B03033A00273E54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1649D1B03033A00273E54 /* ViewController.swift */; };
@@ -76,6 +78,8 @@
 		BEDC76321B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherShareTests.swift; sourceTree = "<group>"; };
 		BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		BEDC76421B13E7CC000EFCC3 /* ForecastNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastNetwork.swift; sourceTree = "<group>"; };
+		BEDC76441B13E851000EFCC3 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		BEE164931B03033A00273E54 /* TheForecaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheForecaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE164971B03033A00273E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE164981B03033A00273E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			children = (
 				BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */,
 				BEDC76401B13C960000EFCC3 /* GlobalConstants.swift */,
+				BEDC76421B13E7CC000EFCC3 /* ForecastNetwork.swift */,
+				BEDC76441B13E851000EFCC3 /* APIKeys.swift */,
 				BEDC76221B13C8F4000EFCC3 /* Supporting Files */,
 			);
 			path = WeatherShare;
@@ -398,7 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDC76451B13E851000EFCC3 /* APIKeys.swift in Sources */,
 				BEDC76411B13C960000EFCC3 /* GlobalConstants.swift in Sources */,
+				BEDC76431B13E7CC000EFCC3 /* ForecastNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+let kAPIKey = "--get your own key at: https://developer.forecast.io"
+
