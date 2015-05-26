@@ -8,5 +8,5 @@
 
 import Foundation
 
-let kAPIKey = "--get your own key at: https://developer.forecast.io"
+let kApiKey = "--get your own key at: https://developer.forecast.io"
 
