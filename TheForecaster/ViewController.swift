@@ -49,9 +49,12 @@ class ViewController: UIViewController {
       println(responseDictionary)
       
       if responseDictionary != nil {
-        let currentConditionsDictionary = responseDictionary!["currently"] as! NSDictionary
-        let iconName = currentConditionsDictionary["icon"] as! String
-        self.weatherImageView.image = UIImage(named: iconName)
+        dispatch_async(dispatch_get_main_queue()) {
+          let currentConditionsDictionary = responseDictionary!["currently"] as! NSDictionary
+          let iconName = currentConditionsDictionary["icon"] as! String
+          self.weatherImageView.image = UIImage(named: iconName)
+          println("updated icon")
+        }
       } else {
         println("No Response: could not update")
       }
