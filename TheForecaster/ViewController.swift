@@ -47,6 +47,14 @@ class ViewController: UIViewController {
     
     ForecastNetwork.requestWeather(latitude: latitude, longitude: longitude) { (responseDictionary) -> () in
       println(responseDictionary)
+      
+      if responseDictionary != nil {
+        let currentConditionsDictionary = responseDictionary!["currently"] as! NSDictionary
+        let iconName = currentConditionsDictionary["icon"] as! String
+        self.weatherImageView.image = UIImage(named: iconName)
+      } else {
+        println("No Response: could not update")
+      }
     }
   }
 
