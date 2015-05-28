@@ -22,14 +22,15 @@ public class ForecastNetwork: NSObject {
       var conversionError: NSError?
       var jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &conversionError) as? NSDictionary
       println(jsonDictionary)
+      
       if conversionError != nil {
         println(conversionError!.localizedDescription)
         completionClosure(responseDictionary: nil)
-      }
-      else {
+      } else {
         completionClosure(responseDictionary: jsonDictionary!)
       }
     })
+    
     weatherTask.resume()
   }
 }

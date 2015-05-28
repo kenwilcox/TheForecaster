@@ -44,6 +44,10 @@ class ViewController: UIViewController {
     println(locationDictionary)
     
     locationLabel.text = "\(city), \(state) (\(country))"
+    
+    ForecastNetwork.requestWeather(latitude: latitude, longitude: longitude) { (responseDictionary) -> () in
+      println(responseDictionary)
+    }
   }
 
 }
