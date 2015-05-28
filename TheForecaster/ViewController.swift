@@ -29,6 +29,9 @@ class ViewController: UIViewController {
   }
   
   @IBAction func refreshWeatherButtonPressed(sender: UIButton) {
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    appDelegate.locationController?.locationManager.stopUpdatingLocation()
+    appDelegate.locationController?.locationManager.startUpdatingLocation()
   }
   
   func locationDidUpdate(notification: NSNotification) {
@@ -41,9 +44,9 @@ class ViewController: UIViewController {
     let state = locationDictionary[GlobalConstants.LocationDictionary.state] as! String
     let country = locationDictionary[GlobalConstants.LocationDictionary.country] as! String
     let lastUpdatedAt = locationDictionary[GlobalConstants.LocationDictionary.timestamp] as! NSDate
-    println(locationDictionary)
     
-    locationLabel.text = "\(city), \(state) (\(country))"
+    println(locationDictionary)
+    //locationLabel.text = "\(city), \(state) (\(country))"
     
     ForecastNetwork.requestWeather(latitude: latitude, longitude: longitude) { (responseDictionary) -> () in
       println(responseDictionary)
