@@ -22,4 +22,11 @@ public struct GlobalConstants {
     public static let country = "country"
     public static let timestamp = "lastUpdatedAt"
   }
+  
+  public struct ForecastNetwork {
+    public static let currently = "currently"
+    public static let icon = "icon"
+    public static let temperature = "temperature"
+    public static let summary = "summary"
+  }  
 }

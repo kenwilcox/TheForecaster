@@ -50,10 +50,19 @@ class ViewController: UIViewController {
       
       if responseDictionary != nil {
         dispatch_async(dispatch_get_main_queue()) {
-          let currentConditionsDictionary = responseDictionary!["currently"] as! NSDictionary
-          let iconName = currentConditionsDictionary["icon"] as! String
+          let currentConditionsDictionary = responseDictionary![GlobalConstants.ForecastNetwork.currently] as! NSDictionary
+          let iconName = currentConditionsDictionary[GlobalConstants.ForecastNetwork.icon] as! String
           self.weatherImageView.image = UIImage(named: iconName)
-          println("updated icon")
+          
+          let temperature = currentConditionsDictionary[GlobalConstants.ForecastNetwork.temperature] as! Double
+          self.temperatureLabel.text = "\(temperature) ℉"
+          
+          let conditions = currentConditionsDictionary[GlobalConstants.ForecastNetwork.summary] as! String
+          self.weatherConditionsLabel.text = conditions
+          self.locationLabel.text = "\(city), \(state), \(country)"
+          
+          let formattedDate = NSDateFormatter.localizedStringFromDate(lastUpdatedAt, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
+          self.updateDateLabel.text = formattedDate
         }
       } else {
         println("No Response: could not update")
