@@ -57,10 +57,27 @@ class InterfaceController: WKInterfaceController {
       let state = locationDictionary[GlobalConstants.LocationDictionary.state] as! String
       let country = locationDictionary[GlobalConstants.LocationDictionary.country] as! String
       let lastUpdatedAt = locationDictionary[GlobalConstants.LocationDictionary.timestamp] as! NSDate
+      
+      ForecastNetwork.requestWeather(latitude: latitude, longitude: longitude, completionClosure: { (responseDictionary) -> () in
+        
+        if responseDictionary != nil {
+          let currentConditionsDictionary = responseDictionary![GlobalConstants.ForecastNetwork.currently] as! NSDictionary
+          
+          let iconName = currentConditionsDictionary[GlobalConstants.ForecastNetwork.icon] as! String
+          self.weatherIconImage.setImage(UIImage(named: iconName))
+          
+          let temperature = currentConditionsDictionary[GlobalConstants.ForecastNetwork.temperature] as! Double
+          self.temperatureLabel.setText("\(temperature) ℉")
+          
+          
+        } else {
+          println("No Response, Could Not Update")
+        }
+        
+      })
+      
     } else {
       println("Location for NSUserDefaults is empty")
     }
-    
-    
   }
 }
