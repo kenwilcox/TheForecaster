@@ -76,6 +76,12 @@ class InterfaceController: WKInterfaceController {
           let formattedDate = NSDateFormatter.localizedStringFromDate(lastUpdatedAt, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
           self.lastUpdatedLabel.setText(formattedDate)
           
+          let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+          let span = MKCoordinateSpanMake(0.05, 0.05)
+          let region = MKCoordinateRegionMake(location, span)
+          self.map.setRegion(region)
+          self.map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Purple)
+          
         } else {
           println("No Response, Could Not Update")
         }
