@@ -22,11 +22,25 @@
                         <label width="136" height="36.5" alignment="left" text="Last Updated" id="lEO-Ju-un4"/>
                         <button width="1" alignment="left" title="Hourly Weather" id="tz6-fw-TLt">
                             <color key="backgroundColor" red="0.32156862745098042" green="0.72156862745098038" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="hourlyWeatherButtonPressed" destination="AgC-eL-Hgc" id="CGn-lS-KNT"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Refresh" id="Rp2-Gi-2MI">
                             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="refreshButtonPressed" destination="AgC-eL-Hgc" id="wTB-Su-9re"/>
+                            </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="conditionsLabel" destination="SG2-cQ-jCJ" id="XLi-GT-Qe1"/>
+                        <outlet property="lastUpdatedLabel" destination="lEO-Ju-un4" id="ovL-fI-G0X"/>
+                        <outlet property="locationLabel" destination="6Hx-gf-1pS" id="xOh-Rh-fM5"/>
+                        <outlet property="map" destination="SNp-d1-Dfa" id="YOU-cH-N9e"/>
+                        <outlet property="temperatureLabel" destination="QpZ-Wj-mKW" id="0YW-7E-Q9s"/>
+                        <outlet property="weatherIconImage" destination="xjv-if-8m8" id="tBK-Oc-sDT"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="354.75"/>
