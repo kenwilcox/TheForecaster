@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE299EFF1B1BED88005117B3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE299EFE1B1BED88005117B3 /* InterfaceController.swift */; };
+		BE299F011B1BED88005117B3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE299F001B1BED88005117B3 /* NotificationController.swift */; };
+		BE299F031B1BED88005117B3 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE299F021B1BED88005117B3 /* GlanceController.swift */; };
+		BE299F051B1BED88005117B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE299F041B1BED88005117B3 /* Images.xcassets */; };
+		BE299F091B1BED88005117B3 /* TheForecaster WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = BE299F081B1BED88005117B3 /* TheForecaster WatchKit App.app */; };
+		BE299F111B1BED88005117B3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE299F0F1B1BED88005117B3 /* Interface.storyboard */; };
+		BE299F131B1BED88005117B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE299F121B1BED88005117B3 /* Images.xcassets */; };
+		BE299F161B1BED88005117B3 /* TheForecaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE299EF91B1BED88005117B3 /* TheForecaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BEDC76251B13C8F4000EFCC3 /* WeatherShare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDC762B1B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; };
 		BEDC76341B13C8F4000EFCC3 /* WeatherShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */; };
@@ -26,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BE299F0A1B1BED88005117B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE299F071B1BED88005117B3;
+			remoteInfo = "TheForecaster WatchKit App";
+		};
+		BE299F141B1BED88005117B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE299EF81B1BED88005117B3;
+			remoteInfo = "TheForecaster WatchKit Extension";
+		};
 		BEDC762C1B13C8F4000EFCC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEE1648B1B03033A00273E54 /* Project object */;
@@ -57,6 +79,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BE299F1D1B1BED88005117B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE299F161B1BED88005117B3 /* TheForecaster WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDC763E1B13C8F4000EFCC3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +104,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE299EF91B1BED88005117B3 /* TheForecaster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TheForecaster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE299EFC1B1BED88005117B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE299EFD1B1BED88005117B3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BE299EFE1B1BED88005117B3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BE299F001B1BED88005117B3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BE299F021B1BED88005117B3 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		BE299F041B1BED88005117B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE299F081B1BED88005117B3 /* TheForecaster WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheForecaster WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE299F0E1B1BED88005117B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE299F101B1BED88005117B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BE299F121B1BED88005117B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC76231B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherShare.h; sourceTree = "<group>"; };
@@ -97,6 +141,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE299EF61B1BED88005117B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDC761C1B13C8F4000EFCC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +181,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE299EFA1B1BED88005117B3 /* TheForecaster WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BE299EFE1B1BED88005117B3 /* InterfaceController.swift */,
+				BE299F001B1BED88005117B3 /* NotificationController.swift */,
+				BE299F021B1BED88005117B3 /* GlanceController.swift */,
+				BE299F041B1BED88005117B3 /* Images.xcassets */,
+				BE299EFB1B1BED88005117B3 /* Supporting Files */,
+			);
+			path = "TheForecaster WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BE299EFB1B1BED88005117B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE299EFC1B1BED88005117B3 /* Info.plist */,
+				BE299EFD1B1BED88005117B3 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE299F0C1B1BED88005117B3 /* TheForecaster WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BE299F0F1B1BED88005117B3 /* Interface.storyboard */,
+				BE299F121B1BED88005117B3 /* Images.xcassets */,
+				BE299F0D1B1BED88005117B3 /* Supporting Files */,
+			);
+			path = "TheForecaster WatchKit App";
+			sourceTree = "<group>";
+		};
+		BE299F0D1B1BED88005117B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE299F0E1B1BED88005117B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BEDC76211B13C8F4000EFCC3 /* WeatherShare */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +266,8 @@
 				BEE164AE1B03033A00273E54 /* TheForecasterTests */,
 				BEDC76211B13C8F4000EFCC3 /* WeatherShare */,
 				BEDC76301B13C8F4000EFCC3 /* WeatherShareTests */,
+				BE299EFA1B1BED88005117B3 /* TheForecaster WatchKit Extension */,
+				BE299F0C1B1BED88005117B3 /* TheForecaster WatchKit App */,
 				BEE164941B03033A00273E54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,6 +279,8 @@
 				BEE164AB1B03033A00273E54 /* TheForecasterTests.xctest */,
 				BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */,
 				BEDC762A1B13C8F4000EFCC3 /* WeatherShareTests.xctest */,
+				BE299EF91B1BED88005117B3 /* TheForecaster WatchKit Extension.appex */,
+				BE299F081B1BED88005117B3 /* TheForecaster WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +339,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BE299EF81B1BED88005117B3 /* TheForecaster WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE299F1C1B1BED88005117B3 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit Extension" */;
+			buildPhases = (
+				BE299EF51B1BED88005117B3 /* Sources */,
+				BE299EF61B1BED88005117B3 /* Frameworks */,
+				BE299EF71B1BED88005117B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE299F0B1B1BED88005117B3 /* PBXTargetDependency */,
+			);
+			name = "TheForecaster WatchKit Extension";
+			productName = "TheForecaster WatchKit Extension";
+			productReference = BE299EF91B1BED88005117B3 /* TheForecaster WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		BE299F071B1BED88005117B3 /* TheForecaster WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE299F1B1B1BED88005117B3 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit App" */;
+			buildPhases = (
+				BE299F061B1BED88005117B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheForecaster WatchKit App";
+			productName = "TheForecaster WatchKit App";
+			productReference = BE299F081B1BED88005117B3 /* TheForecaster WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		BEDC761F1B13C8F4000EFCC3 /* WeatherShare */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDC763D1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShare" */;
@@ -290,11 +417,13 @@
 				BEE164901B03033A00273E54 /* Frameworks */,
 				BEE164911B03033A00273E54 /* Resources */,
 				BEDC763E1B13C8F4000EFCC3 /* Embed Frameworks */,
+				BE299F1D1B1BED88005117B3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BEDC76361B13C8F4000EFCC3 /* PBXTargetDependency */,
+				BE299F151B1BED88005117B3 /* PBXTargetDependency */,
 			);
 			name = TheForecaster;
 			productName = TheForecaster;
@@ -328,6 +457,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Kenneth Wilcox";
 				TargetAttributes = {
+					BE299EF81B1BED88005117B3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BE299F071B1BED88005117B3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					BEDC761F1B13C8F4000EFCC3 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -361,11 +496,31 @@
 				BEE164AA1B03033A00273E54 /* TheForecasterTests */,
 				BEDC761F1B13C8F4000EFCC3 /* WeatherShare */,
 				BEDC76291B13C8F4000EFCC3 /* WeatherShareTests */,
+				BE299EF81B1BED88005117B3 /* TheForecaster WatchKit Extension */,
+				BE299F071B1BED88005117B3 /* TheForecaster WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE299EF71B1BED88005117B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE299F091B1BED88005117B3 /* TheForecaster WatchKit App.app in Resources */,
+				BE299F051B1BED88005117B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE299F061B1BED88005117B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE299F111B1BED88005117B3 /* Interface.storyboard in Resources */,
+				BE299F131B1BED88005117B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDC761E1B13C8F4000EFCC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +555,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE299EF51B1BED88005117B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE299F011B1BED88005117B3 /* NotificationController.swift in Sources */,
+				BE299EFF1B1BED88005117B3 /* InterfaceController.swift in Sources */,
+				BE299F031B1BED88005117B3 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDC761B1B13C8F4000EFCC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +605,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BE299F0B1B1BED88005117B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE299F071B1BED88005117B3 /* TheForecaster WatchKit App */;
+			targetProxy = BE299F0A1B1BED88005117B3 /* PBXContainerItemProxy */;
+		};
+		BE299F151B1BED88005117B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE299EF81B1BED88005117B3 /* TheForecaster WatchKit Extension */;
+			targetProxy = BE299F141B1BED88005117B3 /* PBXContainerItemProxy */;
+		};
 		BEDC762D1B13C8F4000EFCC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEDC761F1B13C8F4000EFCC3 /* WeatherShare */;
@@ -463,6 +638,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BE299F0F1B1BED88005117B3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE299F101B1BED88005117B3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		BEE1649F1B03033A00273E54 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,6 +665,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE299F171B1BED88005117B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE299F181B1BED88005117B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BE299F191B1BED88005117B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TheForecaster_WatchKit_Extension;
+				INFOPLIST_FILE = "TheForecaster WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		BE299F1A1B1BED88005117B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TheForecaster_WatchKit_Extension;
+				INFOPLIST_FILE = "TheForecaster WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		BEDC76391B13C8F4000EFCC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -697,6 +936,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE299F1B1B1BED88005117B3 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE299F191B1BED88005117B3 /* Debug */,
+				BE299F1A1B1BED88005117B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE299F1C1B1BED88005117B3 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE299F171B1BED88005117B3 /* Debug */,
+				BE299F181B1BED88005117B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEDC763D1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -704,6 +959,7 @@
 				BEDC763A1B13C8F4000EFCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEDC763F1B13C8F4000EFCC3 /* Build configuration list for PBXNativeTarget "WeatherShareTests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +968,7 @@
 				BEDC763C1B13C8F4000EFCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE1648E1B03033A00273E54 /* Build configuration list for PBXProject "TheForecaster" */ = {
 			isa = XCConfigurationList;
