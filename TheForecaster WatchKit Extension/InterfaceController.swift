@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import WeatherShare
 
 class InterfaceController: WKInterfaceController {
   
@@ -23,6 +23,7 @@ class InterfaceController: WKInterfaceController {
     super.awakeWithContext(context)
     
     // Configure interface objects here.
+    self.updateUI()
   }
   
   override func willActivate() {
@@ -43,4 +44,23 @@ class InterfaceController: WKInterfaceController {
     
   }
   
+  func updateUI () {
+    var userDefaults = NSUserDefaults(suiteName: GlobalConstants.NSUserDefaults.suiteName)
+    println(userDefaults?.objectForKey(GlobalConstants.NSUserDefaults.locationInfo))
+    
+    let locationData: AnyObject? = userDefaults?.objectForKey(GlobalConstants.NSUserDefaults.locationInfo)
+    if locationData != nil {
+      let locationDictionary = locationData as! Dictionary<String, AnyObject>
+      let latitude = locationDictionary[GlobalConstants.LocationDictionary.latitude] as! Double
+      let longitude = locationDictionary[GlobalConstants.LocationDictionary.longitude] as! Double
+      let city = locationDictionary[GlobalConstants.LocationDictionary.city] as! String
+      let state = locationDictionary[GlobalConstants.LocationDictionary.state] as! String
+      let country = locationDictionary[GlobalConstants.LocationDictionary.country] as! String
+      let lastUpdatedAt = locationDictionary[GlobalConstants.LocationDictionary.timestamp] as! NSDate
+    } else {
+      println("Location for NSUserDefaults is empty")
+    }
+    
+    
+  }
 }

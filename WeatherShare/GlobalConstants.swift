@@ -28,5 +28,10 @@ public struct GlobalConstants {
     public static let icon = "icon"
     public static let temperature = "temperature"
     public static let summary = "summary"
-  }  
+  }
+  
+  public struct NSUserDefaults {
+    public static let suiteName = "group.TheForecaster.k3nx.com"
+    public static let locationInfo = "LOCATION_INFO"
+  }
 }

@@ -53,6 +53,10 @@ extension LocationController: CLLocationManagerDelegate {
           GlobalConstants.LocationDictionary.timestamp: location.timestamp
           ] as NSDictionary
         
+        var userDefaults = NSUserDefaults(suiteName: GlobalConstants.NSUserDefaults.suiteName)
+        userDefaults?.setObject(locationInfo, forKey: GlobalConstants.NSUserDefaults.locationInfo)
+        userDefaults?.synchronize()
+        
         NSNotificationCenter.defaultCenter().postNotificationName(GlobalConstants.NotificationNames.locationDidUpdate, object: nil, userInfo: locationInfo as [NSObject : AnyObject])
         
       }
