@@ -69,6 +69,12 @@ class InterfaceController: WKInterfaceController {
           let temperature = currentConditionsDictionary[GlobalConstants.ForecastNetwork.temperature] as! Double
           self.temperatureLabel.setText("\(temperature) ℉")
           
+          let conditions = currentConditionsDictionary["summary"] as! String
+          self.conditionsLabel.setText(conditions)
+          self.locationLabel.setText("\(city), \(state)")
+          
+          let formattedDate = NSDateFormatter.localizedStringFromDate(lastUpdatedAt, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+          self.lastUpdatedLabel.setText(formattedDate)
           
         } else {
           println("No Response, Could Not Update")
