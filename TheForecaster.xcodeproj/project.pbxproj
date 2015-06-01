@@ -115,6 +115,8 @@
 		BE299F0E1B1BED88005117B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE299F101B1BED88005117B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		BE299F121B1BED88005117B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE299F1E1B1BF9FB005117B3 /* TheForecaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TheForecaster.entitlements; sourceTree = "<group>"; };
+		BE299F1F1B1BFAAE005117B3 /* TheForecaster WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TheForecaster WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC76231B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherShare.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		BE299EFA1B1BED88005117B3 /* TheForecaster WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BE299F1F1B1BFAAE005117B3 /* TheForecaster WatchKit Extension.entitlements */,
 				BE299EFE1B1BED88005117B3 /* InterfaceController.swift */,
 				BE299F001B1BED88005117B3 /* NotificationController.swift */,
 				BE299F021B1BED88005117B3 /* GlanceController.swift */,
@@ -288,6 +291,7 @@
 		BEE164951B03033A00273E54 /* TheForecaster */ = {
 			isa = PBXGroup;
 			children = (
+				BE299F1E1B1BF9FB005117B3 /* TheForecaster.entitlements */,
 				BEE164981B03033A00273E54 /* AppDelegate.swift */,
 				BEE1649D1B03033A00273E54 /* ViewController.swift */,
 				BEE164BF1B03079A00273E54 /* LocationController.swift */,
@@ -459,6 +463,12 @@
 				TargetAttributes = {
 					BE299EF81B1BED88005117B3 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2367R6DXA6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BE299F071B1BED88005117B3 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -472,6 +482,12 @@
 					};
 					BEE164921B03033A00273E54 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2367R6DXA6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BEE164AA1B03033A00273E54 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -668,6 +684,9 @@
 		BE299F171B1BED88005117B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TheForecaster WatchKit Extension/TheForecaster WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -675,6 +694,7 @@
 				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -682,9 +702,13 @@
 		BE299F181B1BED88005117B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TheForecaster WatchKit Extension/TheForecaster WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -883,9 +907,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheForecaster/TheForecaster.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheForecaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -893,9 +921,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheForecaster/TheForecaster.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheForecaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
