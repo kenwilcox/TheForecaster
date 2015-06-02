@@ -75,11 +75,13 @@
                         </group>
                         <label alignment="left" text="Chance of Rain" id="Jp2-xw-FLN"/>
                         <label width="134.5" height="28.5" alignment="left" text="25%" textAlignment="center" id="wcq-4b-QHU"/>
-                        <label width="136" height="34.5" alignment="left" text="Summary" id="oUM-lG-bzL"/>
+                        <label alignment="left" text="Summary" numberOfLines="0" id="oUM-lG-bzL"/>
                     </items>
                     <connections>
-                        <outlet property="chanceOfRainLabel" destination="Jp2-xw-FLN" id="g6H-kf-gIx"/>
-                        <outlet property="summaryLabel" destination="wcq-4b-QHU" id="10S-6v-5mE"/>
+                        <outlet property="chanceOfRainLabel" destination="wcq-4b-QHU" id="y9l-kg-oYs"/>
+                        <outlet property="nextButton" destination="9Ef-Ud-2SL" id="xNC-lO-K0F"/>
+                        <outlet property="previousButton" destination="2Ds-TD-SGh" id="NLW-gj-kVh"/>
+                        <outlet property="summaryLabel" destination="oUM-lG-bzL" id="PnA-rH-U0i"/>
                         <outlet property="temperatureLabel" destination="eFw-DH-zgZ" id="Ig0-OT-d6l"/>
                         <outlet property="timeLabel" destination="0dz-aH-P6J" id="YIQ-c9-qZa"/>
                         <outlet property="weatherIconImage" destination="qTG-0u-KMo" id="CyK-Nh-qKl"/>

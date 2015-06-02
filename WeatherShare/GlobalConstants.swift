@@ -30,6 +30,8 @@ public struct GlobalConstants {
     public static let summary = "summary"
     public static let hourly = "hourly"
     public static let data = "data"
+    public static let time = "time"
+    public static let precipProbability = "precipProbability"
   }
   
   public struct NSUserDefaults {

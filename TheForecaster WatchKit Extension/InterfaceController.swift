@@ -45,7 +45,7 @@ class InterfaceController: WKInterfaceController {
   }
   
   @IBAction func refreshButtonPressed() {
-    
+    self.updateUI()
   }
   
   func updateUI () {
