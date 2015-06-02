@@ -54,9 +54,15 @@
                             <items>
                                 <button width="55" alignment="left" title="&lt;" id="2Ds-TD-SGh">
                                     <color key="backgroundColor" red="0.32156862749999998" green="0.72156862749999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="previousButtonPressed" destination="KEY-RT-gwi" id="p4M-Ti-Toy"/>
+                                    </connections>
                                 </button>
                                 <button width="55" alignment="right" title="&gt;" id="9Ef-Ud-2SL">
                                     <color key="backgroundColor" red="0.32156862745098042" green="0.72156862745098038" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextButtonPressed" destination="KEY-RT-gwi" id="7Pl-I6-Dyq"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -71,6 +77,13 @@
                         <label width="134.5" height="28.5" alignment="left" text="25%" textAlignment="center" id="wcq-4b-QHU"/>
                         <label width="136" height="34.5" alignment="left" text="Summary" id="oUM-lG-bzL"/>
                     </items>
+                    <connections>
+                        <outlet property="chanceOfRainLabel" destination="Jp2-xw-FLN" id="g6H-kf-gIx"/>
+                        <outlet property="summaryLabel" destination="wcq-4b-QHU" id="10S-6v-5mE"/>
+                        <outlet property="temperatureLabel" destination="eFw-DH-zgZ" id="Ig0-OT-d6l"/>
+                        <outlet property="timeLabel" destination="0dz-aH-P6J" id="YIQ-c9-qZa"/>
+                        <outlet property="weatherIconImage" destination="qTG-0u-KMo" id="CyK-Nh-qKl"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="473" y="356.25"/>

@@ -12,6 +12,12 @@ import Foundation
 
 class HourlyWeatherInterfaceController: WKInterfaceController {
   
+  @IBOutlet weak var timeLabel: WKInterfaceLabel!
+  @IBOutlet weak var temperatureLabel: WKInterfaceLabel!
+  @IBOutlet weak var weatherIconImage: WKInterfaceImage!
+  @IBOutlet weak var chanceOfRainLabel: WKInterfaceLabel!
+  @IBOutlet weak var summaryLabel: WKInterfaceLabel!
+  
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
@@ -26,6 +32,14 @@ class HourlyWeatherInterfaceController: WKInterfaceController {
   override func didDeactivate() {
     // This method is called when watch view controller is no longer visible
     super.didDeactivate()
+  }
+  
+  @IBAction func previousButtonPressed() {
+    
+  }
+  
+  @IBAction func nextButtonPressed() {
+    
   }
   
 }
