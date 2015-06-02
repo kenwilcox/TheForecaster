@@ -19,6 +19,8 @@ class InterfaceController: WKInterfaceController {
   @IBOutlet weak var map: WKInterfaceMap!
   @IBOutlet weak var lastUpdatedLabel: WKInterfaceLabel!
   
+  var hourlyResults:[AnyObject]?
+  
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
@@ -37,7 +39,9 @@ class InterfaceController: WKInterfaceController {
   }
   
   @IBAction func hourlyWeatherButtonPressed() {
-    
+    if self.hourlyResults != nil {
+      pushControllerWithName("HourlyWeatherController", context: self.hourlyResults)
+    }
   }
   
   @IBAction func refreshButtonPressed() {
@@ -81,6 +85,9 @@ class InterfaceController: WKInterfaceController {
           let region = MKCoordinateRegionMake(location, span)
           self.map.setRegion(region)
           self.map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Purple)
+          
+          let hourlyDictionary = responseDictionary![GlobalConstants.ForecastNetwork.hourly] as! NSDictionary
+          self.hourlyResults = hourlyDictionary[GlobalConstants.ForecastNetwork.data] as? [AnyObject]
           
         } else {
           println("No Response, Could Not Update")

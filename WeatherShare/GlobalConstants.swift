@@ -28,6 +28,8 @@ public struct GlobalConstants {
     public static let icon = "icon"
     public static let temperature = "temperature"
     public static let summary = "summary"
+    public static let hourly = "hourly"
+    public static let data = "data"
   }
   
   public struct NSUserDefaults {

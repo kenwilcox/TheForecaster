@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="354.75"/>
         </scene>
-        <!--Hourly Weather Interface Controller-->
+        <!--HourlyWeatherController-->
         <scene sceneID="tvP-Lc-7cT">
             <objects>
-                <controller id="KEY-RT-gwi" customClass="HourlyWeatherInterfaceController" customModule="TheForecaster_WatchKit_Extension">
+                <controller identifier="HourlyWeatherController" id="KEY-RT-gwi" customClass="HourlyWeatherInterfaceController" customModule="TheForecaster_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="pjq-xM-Mbe">
                             <items>
