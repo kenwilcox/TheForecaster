@@ -15,6 +15,7 @@
 		BE299F111B1BED88005117B3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE299F0F1B1BED88005117B3 /* Interface.storyboard */; };
 		BE299F131B1BED88005117B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE299F121B1BED88005117B3 /* Images.xcassets */; };
 		BE299F161B1BED88005117B3 /* TheForecaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE299EF91B1BED88005117B3 /* TheForecaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE299F211B1D4BD1005117B3 /* HourlyWeatherInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE299F201B1D4BD1005117B3 /* HourlyWeatherInterfaceController.swift */; };
 		BEDC76251B13C8F4000EFCC3 /* WeatherShare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDC762B1B13C8F4000EFCC3 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */; };
 		BEDC76341B13C8F4000EFCC3 /* WeatherShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76331B13C8F4000EFCC3 /* WeatherShareTests.swift */; };
@@ -117,6 +118,7 @@
 		BE299F121B1BED88005117B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE299F1E1B1BF9FB005117B3 /* TheForecaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TheForecaster.entitlements; sourceTree = "<group>"; };
 		BE299F1F1B1BFAAE005117B3 /* TheForecaster WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TheForecaster WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		BE299F201B1D4BD1005117B3 /* HourlyWeatherInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherInterfaceController.swift; sourceTree = "<group>"; };
 		BEDC76201B13C8F4000EFCC3 /* WeatherShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC76231B13C8F4000EFCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDC76241B13C8F4000EFCC3 /* WeatherShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherShare.h; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				BE299F1F1B1BFAAE005117B3 /* TheForecaster WatchKit Extension.entitlements */,
 				BE299EFE1B1BED88005117B3 /* InterfaceController.swift */,
+				BE299F201B1D4BD1005117B3 /* HourlyWeatherInterfaceController.swift */,
 				BE299F001B1BED88005117B3 /* NotificationController.swift */,
 				BE299F021B1BED88005117B3 /* GlanceController.swift */,
 				BE299F041B1BED88005117B3 /* Images.xcassets */,
@@ -576,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE299F011B1BED88005117B3 /* NotificationController.swift in Sources */,
+				BE299F211B1D4BD1005117B3 /* HourlyWeatherInterfaceController.swift in Sources */,
 				BE299EFF1B1BED88005117B3 /* InterfaceController.swift in Sources */,
 				BE299F031B1BED88005117B3 /* GlanceController.swift in Sources */,
 			);

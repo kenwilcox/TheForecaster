@@ -45,6 +45,36 @@
             </objects>
             <point key="canvasLocation" x="235" y="354.75"/>
         </scene>
+        <!--Hourly Weather Interface Controller-->
+        <scene sceneID="tvP-Lc-7cT">
+            <objects>
+                <controller id="KEY-RT-gwi" customClass="HourlyWeatherInterfaceController" customModule="TheForecaster_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="pjq-xM-Mbe">
+                            <items>
+                                <button width="55" alignment="left" title="&lt;" id="2Ds-TD-SGh">
+                                    <color key="backgroundColor" red="0.32156862749999998" green="0.72156862749999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="55" alignment="right" title="&gt;" id="9Ef-Ud-2SL">
+                                    <color key="backgroundColor" red="0.32156862745098042" green="0.72156862745098038" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" height="26.5" alignment="left" text="Time" id="0dz-aH-P6J"/>
+                        <group width="1" alignment="left" id="Iyy-jk-mna">
+                            <items>
+                                <label width="72.5" height="47.5" alignment="left" text="70" id="eFw-DH-zgZ"/>
+                                <imageView width="59" height="51" alignment="right" image="nodata" id="qTG-0u-KMo"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Chance of Rain" id="Jp2-xw-FLN"/>
+                        <label width="134.5" height="28.5" alignment="left" text="25%" textAlignment="center" id="wcq-4b-QHU"/>
+                        <label width="136" height="34.5" alignment="left" text="Summary" id="oUM-lG-bzL"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="473" y="356.25"/>
+        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
