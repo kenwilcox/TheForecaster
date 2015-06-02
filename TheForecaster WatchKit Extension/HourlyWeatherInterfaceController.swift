@@ -69,7 +69,11 @@ class HourlyWeatherInterfaceController: WKInterfaceController {
     
     let iconString = hourlyWeatherDictionary[GlobalConstants.ForecastNetwork.icon] as! String
     println("\(iconString)")
-    self.weatherIconImage.setImage(UIImage(named: iconString))
+    var image = UIImage(named: iconString)
+    if image == nil {
+      image = UIImage(named: "nodata")
+    }
+    self.weatherIconImage.setImage(image)
     
     let perceipProbability = hourlyWeatherDictionary[GlobalConstants.ForecastNetwork.precipProbability] as! Double
     self.chanceOfRainLabel.setText("\(perceipProbability * 100)%")
